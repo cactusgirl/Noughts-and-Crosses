@@ -8,38 +8,15 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
   <style>
-    .gridcontainer{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      padding: 5px;
-      background-color: #cdcdcd;
-    }
     
-    .button{
-      background-color: #bdbdbd;
-      border: 2px solid #cdcdcd;
-      color: white;
-      padding: 20px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size:30px;
-      cursor: pointer;
-      transition-duration: 0.4s;
-    }
-
-    .button:hover{
-      background-color: #adadad;
-    }
-
-    .container{
-      padding-right: 15px
-    }
   </style>
 </head>
 
 <body>
+  <!--Display title-->
   <h1>Noughts and crosses</h1>
+
+  <!--Display buttons-->
   <div class="container">
     <div class="gridcontainer">
       <button id="button1" class="button">1</button>
@@ -54,20 +31,20 @@
     </div>
   </div>
 
+  <!--Display turn order on screen-->
   <div>
     <label for="turnorder">Turn:</label>
     <p id="turnorder"></p>
   </div>
-  
+
+  <!--Display winner text on screen-->
   <div>
     <label for="winner">Winner:</label>
     <p id="winner"></p>
   </div>
     
   <script>
-    updateTurn()
-    checkWinner()
-    
+    // Set up buttons
     checkButton("button1", 0)
     checkButton("button2", 1)
     checkButton("button3", 2)
@@ -77,6 +54,10 @@
     checkButton("button7", 6)
     checkButton("button8", 7)
     checkButton("button9", 8)
+
+    // Game logic
+    updateTurn()
+    checkWinner()
   </script>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>

@@ -1,4 +1,37 @@
+/*Main page stuff*/
 html, body {
   height: 100%;
   width: 100%;
+}
+
+/*Game grid*/
+.gridcontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  background-color: #cdcdcd;
+}
+
+/*Button style*/
+.button{
+  background-color: #bdbdbd;
+  border: 2px solid #cdcdcd;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:30px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+/*Hover style*/
+.button:hover{
+  background-color: #adadad;
+}
+
+/*Right side padding*/
+.container{
+  padding-right: 15px
 }
