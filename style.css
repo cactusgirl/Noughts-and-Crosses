@@ -16,7 +16,7 @@ html, body {
 .button{
   background-color: #bdbdbd;
   border: 2px solid #cdcdcd;
-  color: white;
+  color: #bdbdbd;
   padding: 20px 20px;
   text-align: center;
   text-decoration: none;
@@ -29,6 +29,7 @@ html, body {
 /*Hover style*/
 .button:hover{
   background-color: #adadad;
+  color: #adadad;
 }
 
 /*Right side padding*/
