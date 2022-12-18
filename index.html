@@ -59,11 +59,15 @@
     <p id="turnorder"></p>
   </div>
   
+  <div>
+    <label for="winner">Winner:</label>
+    <p id="winner"></p>
+  </div>
+    
   <script>
     updateTurn()
-  </script>
-  
-  <script>
+    checkWinner()
+    
     checkButton("button1", 0)
     checkButton("button2", 1)
     checkButton("button3", 2)
