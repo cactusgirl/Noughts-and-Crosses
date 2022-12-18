@@ -10,6 +10,10 @@ function changeTurn() {
   }
 }
 
+function updateTurn() {
+  document.getElementById("turnorder").innerHTML = turn;
+  setTimeout(updateTurn, 1)
+}
 
 function checkButton(name, value) {
       const button = document.getElementById(name);
