@@ -8,14 +8,28 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
   <style>
-    
+    div.fixed {
+      position: fixed;
+      top: 165px;
+      left: 90px;
+      text-align: center;
+      border: 2px solid #f2f2f2;
+      background-color: #ffffff;
+      padding: 5%;
+      font-size: 20px;
+      visibility: hidden;
+      transition-duration: 0.4s;
+    }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--Display title-->
   <h1>Noughts and Crosses</h1>
 
+  <div class="fixed" id="winner display" >The winner is ...</div>
+  
   <!--Display buttons-->
   <div class="container">
     <div id="grid" class="gridcontainer">
@@ -35,12 +49,6 @@
   <div>
     <label for="turnorder">Turn:</label>
     <h3 id="turnorder"></h3>
-  </div>
-
-  <!--Display winner text on screen-->
-  <div>
-    <label for="winner">Winner:</label>
-    <h3 id="winner"></h3>
   </div>
     
   <script>

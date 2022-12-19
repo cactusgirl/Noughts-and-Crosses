@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /*Game grid*/
@@ -24,6 +25,7 @@ html, body {
   font-size:30px;
   cursor: pointer;
   transition-duration: 0.4s;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /*Hover style*/
