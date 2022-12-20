@@ -80,7 +80,7 @@ function displayWinner() {
   } else if (winner == "draw") {
     div.innerHTML = "It was a draw"
   }
-  div.style.visibility = "visible"
+  div.style.visibility = "visible";
 }
 
 // Win code

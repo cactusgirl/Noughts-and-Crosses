@@ -11,6 +11,10 @@ html, body {
   grid-template-columns: auto auto auto;
   padding: 5px;
   background-color: #cdcdcd;
+  width: 45%;
+  aspect-ratio: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Button style*/
@@ -36,5 +40,21 @@ html, body {
 
 /*Right side padding*/
 .container{
+  position: relative;
   padding-right: 15px
+}
+
+/*Popup*/
+div.fixed {
+  padding: 5%;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #f2f2f2;
+  background-color: #ffffff;
+  visibility: hidden;
+  transition-duration: 0.4s;
 }
